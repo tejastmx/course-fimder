@@ -1,6 +1,7 @@
 export default function displayCourses({ allCourses, submitFilterDetails }) {
-  let filterCourses = allCourses;
 
+  let filterCourses = allCourses;
+  //handling filter conditions  
   if (
     submitFilterDetails.date ||
     submitFilterDetails.course ||
@@ -51,6 +52,8 @@ export default function displayCourses({ allCourses, submitFilterDetails }) {
       });
     }
   }
+
+  //function to render all courses
   let renderAllCourses = () => {
     return filterCourses.map((course) => {
       return (
@@ -67,8 +70,8 @@ export default function displayCourses({ allCourses, submitFilterDetails }) {
               {/* <span>Next Session Date</span> */}
               {course["Next Session Date"] && (
                 <p>
-                  {" "}
-                  <i class="fas fa-calendar-alt"></i>{" "}
+                  
+                  <i className="fas fa-calendar-alt"></i>
                   {course["Next Session Date"]}
                 </p>
               )}
@@ -128,6 +131,7 @@ export default function displayCourses({ allCourses, submitFilterDetails }) {
             <h1>No courses found try diffrent filter....</h1>
           </div>
         )}
+        {/* {console.log(submitFilterDetails)} */}
     </div>
   );
 }

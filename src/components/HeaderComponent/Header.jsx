@@ -34,7 +34,7 @@ export default function Header({
               />
             </div>
             <div>
-              <i class="fas fa-calendar-week"></i>
+              <i className="fas fa-calendar-week"></i>
               <input
                 type="date"
                 name="date"
@@ -50,6 +50,8 @@ export default function Header({
                 name="isSelfPaced"
                 onChange={(e) => {
                   getSearchDetails(e);
+
+                //disabling date if self paced is selected   
                   let date = document.getElementById("date");
                   if (!setSearchDetails.isSelfPaced) {
                     date.disabled = true;
@@ -67,7 +69,7 @@ export default function Header({
                 onClick={(e) => {
                   submitDetails(e);
                   let date = document.getElementById("date");
-
+                  date.value = "";
                   date.disabled = false;
                   // date.value=''
                 }}

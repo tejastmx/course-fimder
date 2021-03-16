@@ -45,7 +45,10 @@ export default function MainComponent() {
       .get("https://nut-case.s3.amazonaws.com/coursessc.json")
       .then((res) => {
         // console.log(res.data);
-        setCourses(res.data);
+
+
+        //fetching only 500 cources
+        setCourses(res.data.slice(0,500));
       })
       .catch((error) => console.log(error));
   }, []);
@@ -106,6 +109,9 @@ export default function MainComponent() {
         year;
     }
 
+
+    //set date to empty if self paced is selected
+
     if (searchDetails.isSelfPaced) {
       setSubmitFilterDetails({
         course: searchDetails.course,
@@ -113,7 +119,9 @@ export default function MainComponent() {
         date: "",
         isSelfPaced: searchDetails.isSelfPaced,
       });
-    } else {
+    } 
+     //set self paced  to false if date is selected
+    else {
       setSubmitFilterDetails({
         course: searchDetails.course,
         childsubject: searchDetails.childsubject,
