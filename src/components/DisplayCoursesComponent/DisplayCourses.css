@@ -1,0 +1,132 @@
+.courses-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    padding-top: 150px;
+}
+.course-card{
+    width: 350px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin: 100px 30px 0px 30px ;
+    transition: 1s;
+    min-height: 250px;
+    background: rgba(255, 255, 255, 0.149);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+.course-card h1{
+  text-align: center;
+    margin-top:20px;
+    text-transform: capitalize;
+    text-shadow: 0px 2px 4px gray;
+}
+.course-card:hover{
+    transform: translateY(-20px);
+    background-color: white;
+    cursor: pointer;
+}
+
+.card-body{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    overflow-wrap: break-word;
+}
+.card-body-title{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.card-body-title p{
+    font-family: 'Satisfy', cursive;
+    text-transform: capitalize;
+}
+.card-body-title ul li{
+    font-family: 'Satisfy', cursive;
+}
+.course-card h3{
+    font-weight: 300;
+   
+    font-family: 'Poppins', sans-serif;
+}
+.course-card h4{
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: 'Acme', sans-serif;
+    color: rgb(255, 25, 56);
+    text-shadow: 0px 1px 1px black;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+.course-card .details h4{
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-weight: 400;
+    text-shadow: none;
+}
+
+.course-card .details h5{
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: none;
+
+}
+
+.card-body-title ul{
+    list-style-type:none;
+}
+
+.card-body span{
+    letter-spacing: 2px;
+    font-weight:700;
+    font-style: italic;
+    margin-bottom:0px;
+    margin-top:5px;
+    font-size:12px;
+    color:gray;
+}
+
+
+.count {
+    position: fixed;
+    top:40px;
+    right:10px;
+    color:rgb(255, 255, 255);
+    z-index: 101 !important; 
+}
+.count span{
+    background-color:white;
+    padding:5px;
+    min-width:50px;
+    min-height: 50px;
+    border-radius: 5px;
+    color:rgb(255, 0, 85);
+}
+
+#loader{
+    position: relative;
+    top:200px;
+    text-align: center;
+    color:rgb(103, 99, 99);
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (min-width:320px) and (max-width:1023px)
+{
+    .courses-container{
+        padding-top: 300px;
+    }
+    .count {
+        font-size:0.6rem;
+        top:58px;
+    }
+}
