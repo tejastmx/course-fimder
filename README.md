@@ -1,20 +1,20 @@
-# Getting Started with Create React App
+# `Deployment link`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://coursesfinder.netlify.app/
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
+## `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `Screenshots`
+### `notes`
+- if cors error occured add 'Moesif CORS' chrome's extension.
+- to visit the course link just click on card.
+- added course data limit to 500.
+ 
+
+#### `Screenshots`
 ![Screenshot 2021-03-16 200645](https://user-images.githubusercontent.com/26419378/111327238-386e4f80-8693-11eb-9a37-1c3dd30171b1.jpg)
 <img width="960" alt="loadingScreen" src="https://user-images.githubusercontent.com/26419378/111327245-399f7c80-8693-11eb-9a3f-3a621ba7bde0.png">
 ![notfound](https://user-images.githubusercontent.com/26419378/111327246-3a381300-8693-11eb-9331-53afd8c184d7.jpg)
